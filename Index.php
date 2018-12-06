@@ -1,18 +1,26 @@
-<?php
-
-//$animals = ['dog', 'cat'];
-
-//function dumper($one, $two, $three){
-    //var_dump($one, $two, $three);
-//}
-
-//dumper('Hello', 'Big', 'World');
+<?PHP
 
 
 
 
 
 
+// function club($age){
+//     if ($age=21);{
+//         return 'Je kan erin'
+//     } 
+//     else {
+
+//     }
+// }
+
+
+
+
+
+// for ($i=1;$i<50;$i++){
+//     echo club($i);
+// }
 
 
 
@@ -21,16 +29,33 @@
 
 
 
-$task = [
-    'title' => 'make homework',
-    'due' => 'tomorrow',
-    'assigned_to' => 'lars',
-    'completed' => true
-];
+
+//$task = [
+    //'title' => 'make homework',
+    //'due' => 'tomorrow',
+    //'assigned_to' => 'lars',
+    //'completed' => true
+//];
 
 
-//echo '<pre>';
-//die(var_dump($task));
-//echo '</pre>';
-require "Index.view.php";
 
+
+//require "Index.view.php";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+        

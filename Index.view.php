@@ -1,29 +1,31 @@
-<!DOCTYPE <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang = 'en'>
 <head>
     <meta charset="utf-8" />
     <title>Document Lars</title>
     <style>
         body{
-            background-color: 400000;
-            color: white;
+            background-color: #400;
+            color: #198673;
         }
     </style>
 
 </head>
 <body>
-    <h1>Haalloo LLAARRSS</H1>
+    <label><h1>Leeftijd</h1></label>
     <h1><?= ucwords('task for the day')?></h1>
     
     <ul>
        <li>
-       <strong>Name: </strong> <?php ($task['assigned_to']) ?>
-       </li>
-       <li></li>
-       <li></li>
-
-        <li>
-            <strong>Completed: </strong> 
+       <strong>Name: </strong> 
+            <?php 
+            ($task['assigned_to']) 
+       
+            
+            if (! true){
+            echo 'complete';
+            }?>
+            
             <?php 
             if ($task['completed']) {
                 echo 'complete';
@@ -31,8 +33,7 @@
                 echo 'incomplete';
             }
             ?>
-        </li>
+            </li>
     </ul>
-
 </body>
 </html>
