@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Handleiding php</title>
+</head>
+<style>
+    body {
+        background-color: lightsteelblue;
+        color: black;
+        max-width: 700px;
+        min-width: 700px;
+    }
+
+    .wit {
+        color: white;
+    }
+
+    .witterRand {
+        background-color: white;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .lengthArea {
+        width: 400px;
+        height: 15px;
+        max-width: 400px;
+        max-height: 15px;
+        min-width: 400px;
+        min-height: 15px;
+        background-color: rgba(138, 170, 211, 0.781);
+        color: white;
+    }
+
+    .blauwVlak {
+        background-color: slategrey;
+        color: white;
+        position: relative;
+        width: 500px;
+        padding-left: 5px;
+        border-radius: 3px;
+    }
+
+    .lineColor {
+        background-color: black;
+        height: 1px;
+        border-radius: 10px;
+    }
+</style>
+
+<body>
+    <h1 class="wit">Handleiding php</h1>
+    <hr class="lineColor">
+    <div class="witterRand">
+        <h2>Variable</h2>
+        <p>
+            <ol>
+                <li>
+                    <strong>Als je een woord wilt schrijven met php gebruik dan de volgende code:</strong>
+                    <br>
+                    <div class="blauwVlak"><code>echo '<strong><em>hier het woord</em></strong>';</code></div>
+                </li>
+                <br>
+                <li>
+                    <strong>Als je wilt dat php een code niet weergeeft in de browser kan je ervoor kiezen om er 2 //
+                        voor
+                        te zetten. Als je dit doet word de code niet uitgevoerd in de browser. Je kan ook meerdere
+                        codes tegelijk uitzetten door eerst de gewenste codes te selecteren en daarna Ctrl en /
+                        tegelijk in
+                        te drukken.
+                    </strong>
+                </li>
+                <br>
+                <li>
+                    <strong>Als je een woord wilt opschrijven met behulp van een variable gebruik dan de volgende code:</strong>
+                    <br>
+                    <div class="blauwVlak"><code>$<strong><em>Hier de variable: kan wilekeurig woord zijn</em></strong> = 'Hier het woord dat je wilt schrijven';<br>
+                echo '<strong><em>Hier de variable: hetzelfde als hierboven</em></strong>'</code></div>
+                    <br>
+                    <br>
+                    <strong>eventueel kan je ook voor de variable een woord zetten zoals bijvoorbeeld:</strong>
+                    <br>
+                    <div class="blauwVlak"><code>$name = 'Lars'<br>
+                echo 'Hello', $name</code></div>
+                    <br>
+                    <br> uitkomst: Hello Lars
+                </li>
+            </ol>
+        </p>
+    </div>
+    <br>
+    <div class="witterRand">
+        <h2>Php en html</h2>
+        <p>
+            <ol>
+                <li>
+                    <strong>Om php in html te gebruiken moet je een openings- en sluitingstag gebruiken zoals in
+                        onderstaand voorbeeld:</strong>
+                    <br>
+                    Openingstag:
+                    <div class="blauwVlak"> <code>&lt;?php</code></div>
+                    <br>
+                    Sluitingstag:
+                    <div class="blauwVlak"> <code>?&gt;</code></div>
+                    <br>
+                    <br>
+                    <strong>Naast openings- en sluitingstags te gebruiken hebben we ook nog een afkorting voor php
+                        echo. Namelijk:</strong>
+                    <br>
+                    <br>
+                    Lange versie:<br>
+                    <div class="blauwVlak"> <code>&lt;?php echo</code></div><br>
+                    Korte versie:<br>
+                    <div class="blauwVlak"> <code>&lt;?=</code></div>
+                    <br> De = bij de korte versie staat dus voor php echo.
+                    <br>
+                </li>
+                <br>
+                <li>
+                    <strong>Je kan met php ook in de URL werken. Dit kan je doen met de volgende code:</strong>
+                    <div class="blauwVlak"> <code>$variable $_GET['name'];<br><br>echo $variable;</code></div>
+                    <br>
+
+                    <strong>Voordat je iets in de url kan schrijven moet je ook nog wat tekst achter de documentnaam
+                        zetten namelijk:</strong>
+                    <br>
+                    <code>/?name=</code>
+                    <br><br>
+                    Je kunt hierbij in de url schrijven alsof het een html document is. Dat betekent dus dat je in de
+                    URL van de pagina (bijna) alle codes kan gebruiken.</strong>
+                    <br><br>
+                    <strong>Je kan dit op twee manieren schrijven waarvan dit de tweede manier is:</strong>
+                    <br>
+                    <div class="blauwVlak"><code>echo "Hoi", $_GET['Lars'];</code></div>
+                </li>
+            </ol>
+        </p>
+    </div>
+    <br>
+    <div class="witterRand">
+        <h2>PHP-logica van presentatie</h2>
+        <p>
+            <ol>
+                <li>
+                    <strong>Met php kan je net als in html een ander document toevoegen aan jouw document. Gerbuik
+                        hiervoor de volgende code:</strong>
+                    <br>
+                    <div class="blauwVlak"><code>require "<strong><em>Naam van document</em></strong>"</code></div>
+                </li>
+            </ol>
+        </p>
+    </div>
+    <br>
+    <div class="witterRand">
+        <h2>Arrays</h2>
+        <p>
+            <ol>
+                <li>
+                    <strong>Je kan met php ook arrays maken met de volgende code:</strong><br>
+                    <div class="blauwVlak"><code>$<strong><em>Naam van array</em></strong> = [<br>'<strong><em>woord</em></strong>',<br> '<strong><em>woord</em></strong>',<br> '<strong><em>woord</em></strong>'<br>];</code></div>
+                    <br> Je kan de array zolang maken als je wilt. In de array moeten woorden tussen
+                    aanhalingstekens staan maar cijfers hoeven dat niet.
+                </li>
+                <br>
+                <li>
+                    <strong>Om arrays uit te voeren zijn er ook verschillende mogelijkheden. voor deze opdracht
+                        gebruiken we deze array:</strong><br>
+                    <div class="blauwVlak"> <code>$names = [<br>
+                                                    'Lars',<br>
+                                                    'Koen',<br> 
+                                                    'Liesbeth'<br>
+                                        ];</code></div>
+                    <br><br>
+                    <ul>
+                        <li>
+                            <strong>Je kan het op een manier doen waarbij je ze gewoon achter elkaar zet:</strong><br>
+                            <div class="blauwVlak"> <code>foreach ($names as $name) {<br>
+                                                            echo $name;<br>
+                                                            };</code></div>
+                        </li>
+                        <br><br>
+                        <li>
+                            <strong>Je kan het ook doen op een manier dat ze netjes onder elkaar staan. <br>Hier
+                                zijn
+                                twee
+                                manieren voor.</strong><br><br>
+                            <strong>De eerste manier:</strong><br>
+                            <div class="blauwVlak"> <code>&lt;?php foreach ($names as $name) {<br>
+                            &lt;li&gt;$name;&lt;/li&gt;<br>
+                            } ?&gt;</code></div>
+                            <br><br>
+                            <strong>De tweede manier:</strong><br>
+
+                            <div class="blauwVlak"> <code>&lt;?php foreach ($names as $name) : ?&gt;<br>
+                                &lt;li&gt;&lt;?=$name;?&gt;&lt;/li&gt;<br>
+                                 &lt;?php endforeach; ?&gt;</code></div>
+                            <br>
+                            mijn voorkeur gaat uit naar de eerste manier.
+                        </li>
+                        <br><br>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Je kan met deze code iets toevoegen aan de array:</strong>
+                    <div class="blauwVlak"> <code>$person[] = 'Lars';</code></div>
+                </li>
+            </ol>
+        </p>
+    </div>
+    <br>
+    <div class="witterRand">
+        <h2>Associative arrays</h2>
+        <p>
+            <ol>
+                <li>
+                    <strong>een associative array is bijna hetzelfde als een gewone array maar aan deze arrays zit een
+                        sleutel aan, eigenlijk is het gewoon een beschrijving van wat je erachter zet.<br>voor deze
+                        opdracht gebruiken
+                        we deze array:</strong><br>
+                    <div class="blauwVlak"><code>$names = [<br>
+                        'Naam' =&gt; 'Lars',<br>
+                        'Leeftijd' =&gt; 18<br> 
+                        ];</code></div><br><br>
+
+                    bij dit voorbeeld zijn de Naam en de Leeftijd de sleutel, en Lars en 18 zijn het antwoord.
+                </li>
+                <br><br>
+                <li>
+                    <strong>Dit is een manier om het te laten zien in de browser zonder sleutel:</strong>
+                    <div class="blauwVlak"><code>&lt;?php foreach ($person as $feature) : ?&gt;<br>
+                    &lt;?= $feature; ?&gt;<br>
+                    &lt;?php endforeach; ?&gt;</code></div>
+                    <br><br>
+                    <strong>en dit is een manier om het te laten zien met sleutel:</strong>
+                    <div class="blauwVlak"><code>&lt;?php foreach ($person as $feature =&gt; $value) : ?&gt;<br>
+                        &lt;li&gt;&lt;?= $feature; ?&gt; &lt;?= $value; ?&gt;&lt;/li&gt;<br>
+                        &lt;?php endforeach; ?&gt;</code></div>
+                </li>
+                <br><br>
+                <li>
+                    <strong>Je kan met deze code iets toevoegen aan een array:</strong>
+                    <div class="blauwVlak"><code>$person['name'] = 'Lars';</code></div>
+                </li>
+                <br><br>
+                <li>
+                    <strong>Die, var_dump en pre</strong>
+                    <br><br>
+                    <ul>
+                        <li>
+                            <strong>Je kan een hele array onder elkaar zetten met pre:</strong>
+                            <div class="blauwVlak"><code>echo '&lt;pre&gt;';<br>
+                            echo 'variable';<br>
+                            echo '&lt;pre&gt;';</code></div>
+                            <br>
+                        </li>
+                        <br>
+                        <li>
+                            <strong>Je kan informatie laten verschijnen over de array met de code var_dump:</strong><br>
+                            <div class="blauwVlak"><code>var_dump(variable);</code></div>
+                        </li>
+                        <br>
+                        <li>
+                            <strong>Je kan hier ook </strong><em>die</em><strong> bij gebruiken. </strong><em>die</em><strong>
+                                Zorgt ervoor dat de codes die onder deze
+                                code staan niet worden uitgevoerd.</strong><br>
+                            <div class="blauwVlak"><code>die(var_dump(variable));</code></div>
+                        </li>
+                        <br>
+                        <li>
+                            Je kan <em>die</em> ook alleen gebruiken met <em>echo</em> ervoor:
+                            <div class="blauwVlak"><code>echo die;</code></div>
+                            <br><br>
+                            <em>var_dump</em> Kan je niet alleen gebruiken omdat ie dan iets moet hebben wat hij dan
+                            kan var dumpen.
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </p>
+    </div>
+    <br>
+    <div class="witterRand">
+        <p>
+            <h2>Booleans</h2>
+            <ol>
+                <strong>Een boolean gebruik je vooral als wilt aangeven of iets goed of fout is. een boolean
+                    kent namelijk alleen maar <em>true</em> en <em>false</em>. Voor deze opdrachten gebruiken we
+                    deze array, en dan vooral de laatste namelijk: <code>'voltooid' =&gt; ''</code>.</strong>
+                <div class="blauwVlak">
+                    <code>$task = [<br>
+                        'Titel' =&gt; 'Huiswerk afmaken',<br>
+                        'Waneer' =&gt; 'Vandaag',<br>
+                        'Wie gaat het doen' =&gt; 'Lars',<br>
+                        'Voltooid' =&gt; ''<br>
+                        ];</code>
+                </div>
+                <br><br>
+                <li>
+                    <strong>Je kan dus een boolean beginnen door true of false te typen achter voltooid zoals
+                        onderstaand voorbeeld.</strong><br>
+                    <div class="blauwVlak">
+                        <code>$task = [<br>
+                        'voltooid' =&gt; true</code>
+                    </div>
+                    of
+                    <div class="blauwVlak">
+                        <code>$task = [<br>
+                        'voltooid' =&gt; false</code>
+                    </div>
+                    <br>
+                    Maar zoals je dan kan zien in de uitslag komt er dan niks te staan.
+                </li>
+                <br><br>
+                <li>
+                    <strong>De volgende stap is om de array zichtbaar te maken met de code uit de vorige paragraaf:</strong>
+                    <div class="blauwVlak"><code>&lt;?php foreach ($task as $feature =&gt; $value) : ?&gt;<br>
+                        &lt;li&gt;&lt;?= $feature; ?&gt; &lt;?= $value; ?&gt;&lt;/li&gt;<br>
+                        &lt;?php endforeach; ?&gt;</code></div>
+                    <br>
+                    Maar met een boolean is het eigenlijk makkelijker om deze manier te gebruiken:
+                    <div class="blauwVlak"><code>Titel: &lt;? $task['Titel']; ?&gt;</code></div><br><br>
+                    Dit kan je dan bij elke <code>feature</code> doen, maar voor de boolean moet er ook nog iets extra
+                    bij.
+                </li>
+                <br><br>
+                <li>
+                    Bij de boolean beginnen we ook met de vorige code:<br>
+                    <div class="blauwVlak"><code>Voltooid &lt;? $task['Voltooid']; ?&gt;</code></div><br>
+                    Maar er moest nog iets bij voor de betekenis van de boolean.
+                    <div class="blauwVlak"><code>Voltooid &lt;? $task['Voltooid']; 'completed' : 'incompleted'; ?&gt;</code>
+                    </div><br>
+                    Als je nu true zet achter voltooid, komt er completed te staan en als je false neerzet
+                    komt er incompleted te staan. Je kan completed en incompleted gewoon veranderen in bovenstaande
+                    code.
+                </li>
+            </ol>
+        </p>
+    </div>
+    <br>
+    <div class="witterRand">
+        <h2>Conditionals</h2>
+        <p>
+            <ol>
+                <strong>Een conditional heeft ook met de boolean te maken alleen is de conditional iets langer maar wel
+                    makkelijker te begrijpen.Je kan een conditional samen met een boolean gebruiken. We gaan ook weer
+                    dezelfde array
+                    gebruiken als bij de booleans.</strong>
+                <div class="blauwVlak">
+                    <code>$task = [<br>
+                        'Titel' =&gt; 'Huiswerk afmaken',<br>
+                        'Waneer' =&gt; 'Vandaag',<br>
+                        'Wie gaat het doen' =&gt; 'Lars',<br>
+                        'Voltooid' =&gt; ''<br>
+                    ];</code>
+                </div>
+                <br>
+                <li>
+                    Hierbij gaan we ook weer met true en false werken en wat er moet komen te staan als dat zo is.
+                    Hieronder zie je een manier om een conditional te schrijven:
+                    <div class="blauwVlak">
+                        <code>if ($task['Voltooid']) {<br>
+                                echo 'klaar';<br>
+                            } else {<br>
+                                echo 'nog niet klaar';<br>
+                            }</code>
+                    </div><br>
+                    Deze code kan je achter de naam zetten zoals Voltooid of Titel.<br>
+                    Deze code is handiger dan de kortere versie van de vorige paragraaf als je heel veel code hebt om
+                    te typen. <br>Je kan ook icoontjes toevoegen. een voorbeeld hiervan is de site van w3 schools.<br>
+                    zoek naar: unicode html en je vind het wel.
+                </li>
+                <br>
+                <li>
+                    Er is ook nog een manier om dit op te schrijven.
+                    <div class="blauwVlak">
+                        <code>&lt;?php if ($task['Voltooid']) : ?&gt;<br>
+                                &lt;span class='icon'&gt;'klaar';&lt;/span&gt;<br>
+                                &lt;?php else : <br>
+                                <span class='icon'>'niet klaar';</span><br>
+                                &lt;?php endif; ?&gt;</code>
+                    </div><br>
+                </li>
+                <li>
+                    Als je alleen iets wilt laten zien als het klaar of niet klaar is kun je deze code gebruiken:
+                    <div class="blauwVlak">
+                        <code>if (! $task['Voltooid']) {<br>
+                        echo 'niet klaar';<br>
+                    }</code></div>
+                    <br><br>
+                    het uitroepteken betekent in dit geval (niet) letterlijk.
+                </li>
+            </ol>
+        </p>
+    </div>
+    <br>
+    <div class="witterRand">
+        <h2>Functions</h2>
+        <p>
+            <ol>
+                <li>
+                    Hier zie je een function die we gaan gebruiken:<br>
+                    <div class="blauwVlak"><code>function ($een, $twee, $drie)</code></div><br>
+                    Je kan alle variable in de function var_dumpen. Bijvoorbeeld:
+                    <div class="blauwVlak"><code>function ($een, $twee, $drie) {<br>
+                    var_dump($een, $twee, $drie);<br>
+                    }</code></div>
+                </li>
+                <br>
+                <li>
+                    Je kan de function een naam geven. bijvoorbeeld:
+                    <div class="blauwVlak"><code>function dumper($een, $twee, $drie)</code></div>
+                </li>
+                <br>
+                <li>
+                    Je kan onder de function de function uitvoeren door de naam van de function op te schrijven zoals
+                    in onderstaan voorbeeld. Je kan hierbij dezelfde variable gebruiken maar je kan ook andere woorden
+                    gebruiken.<br><br>
+                    Dezelfde variable
+                    <div class="blauwVlak"><code>dumper('een', 'twee', 'drie')</code></div>
+                    <br>
+                    Andere variable:
+                    <div class="blauwVlak"><code>dumper('Hallo', 'grote', 'wereld')</code></div>
+                </li>
+            </ol>
+        </p>
+    </div>
+    <br>
+        <h2>Overig</h2>
+        <p>
+            <ul>
+                <li>
+                    DD is een afkorting voor Die var_dump.
+                </li>
+            </ul>
+        </p>
+</body>
+
+</html>
