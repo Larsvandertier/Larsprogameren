@@ -100,10 +100,13 @@ function names($firstName, $insertion, $lastName) {
 }
 
 function salutation($geslacht, $achternaam) {
-    if ($geslacht = 'vrouw') {
-        return 'Geachte'. 'mevrouw'. $achternaam;
-    }   
-    else ($geslacht = 'man') {
+    if ($geslacht == 'vrouw') {
+        return 'Geachte mevrouw'. ' '. $achternaam;
+    }   else {
         return 'Geachte heer'. $achternaam;
     }
+}
+
+function valuta($dollar) {
+    return $dollar * 0.8739;
 }

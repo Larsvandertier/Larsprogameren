@@ -1,41 +1,5 @@
-<!DOCTYPE <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
-</head>
-<body>
-    <?php
+<?php
 // echo "hello, " . $_GET['name'];
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -45,21 +9,10 @@
 //     'Wie gaat het doen' => 'Lars',
 //     'Voltooid' => true
 //     ];
-
-
 // ?>
 
-// <?= ucwords('Hallo ik ben lars'); ?>
 
-// <br>
-
-
-
-
-
-
-
-
+<!-- <?= ucwords('Hallo ik ben lars'); ?> -->
 
 
 <!-- <strong>Titel: </strong> <?= $task ['Titel']; ?><br>
@@ -74,19 +27,9 @@
 // }
 
 
-
-
-
 // if (! $task['Voltooid']) {
 //     echo 'niet klaar';
 // }
-
-
-
-
-
-
-
 
 
 ?>
@@ -97,16 +40,6 @@
     </li>
     <?php endforeach; ?>
 </ul> -->
-
-
-
-
-
-
-
-
-
-
 
 
 <?php
@@ -120,31 +53,11 @@
 // var_dump($person);
 
 
-
 // $person = [
 //     'name' => 'Lars',
 //     'age' => 18
 // ];
 // ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <!-- <ul>
@@ -154,26 +67,6 @@
 <?php endforeach; ?>
 
 </ul> -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <!-- <ul>
@@ -202,19 +95,9 @@ foreach ($names as $name) {
 // }
 
 
-
-
-
 // for ($i=1;$i<50;$i++){
 //     echo club($i);
 // }
-
-
-
-
-
-
-
 
 
 //$task = [
@@ -223,12 +106,3 @@ foreach ($names as $name) {
     //'assigned_to' => 'lars',
     //'completed' => true
 //];
-
-
-
-
-//require "Index.view.php"
-?>
-</body>
-</html>
-

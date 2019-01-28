@@ -84,9 +84,14 @@ if (equalNumber(5)) {
 echo '</pre>';
 
 echo '<pre>';
-echo names('Lars', ' ', 'Tier');
+echo names('Lars', 'van der', 'Tier');
 echo '</pre>';
 
 echo '<pre>';
-echo names('Lars', 'Tier');
+echo salutation('man ', 'Tier');
 echo '</pre>';
+
+echo '<pre>';
+echo valuta(56);
+echo '</pre>';
+
